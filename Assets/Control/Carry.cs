@@ -21,10 +21,12 @@ namespace Control {
                         c.GetComponent<Cartography.Explorer>().foodPlace.transform;
                     transform.localScale = carryingScale;
                     transform.localPosition = new Vector3(0,0,0);
-                } else if (c.CompareTag("Village")) {
+                } else if (c.CompareTag("Village") && isDroppedAtVillage) {
                     Drop();
                     transform.position = place.transform.position;
                     alreadyDropped = true;
+                    GameObject.FindWithTag("Explorer").transform.parent.
+                        GetComponent<PlayerStamina>().Powerup();
                 }
             }
         }

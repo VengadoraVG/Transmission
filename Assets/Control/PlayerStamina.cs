@@ -1,35 +1,40 @@
 using UnityEngine;
 using System.Collections;
+using Cartography;
 
 namespace Control {
     public class PlayerStamina : MonoBehaviour {
-        public delegate void ConsumeDelegate ();
-        public delegate void PowerupDelegate ();
+        public delegate void StaminaChangeDelegate ();
 
-        public event ConsumeDelegate OnConsume;
-        public event PowerupDelegate OnPowerup;
+        public event StaminaChangeDelegate OnStaminaChange;
 
         public int max;
         public int current;
+        public Explorer explorer;
+
+        void Awake () {
+            explorer.OnVillageVisit += Recover;
+        }
 
         public void Recover () {
-            max = current;
+            current = max;
+            if (OnStaminaChange != null) OnStaminaChange();
         }
 
         public void Powerup () {
             max += 3;
             current = max;
 
-            if (OnPowerup != null) OnPowerup();
+            if (OnStaminaChange != null) OnStaminaChange();
         }
 
         public void Consume () {
-            current--;
-            if (OnConsume != null) OnConsume();
-            
             if (current == 0) {
                 // TODO: die
             }
+
+            current--;
+            if (OnStaminaChange != null) OnStaminaChange();
         }
     }
 }

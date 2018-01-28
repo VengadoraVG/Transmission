@@ -11,8 +11,7 @@ namespace MyUI {
         public Stamina prototype;
 
         void Awake () {
-            stamina.OnConsume += UpdateView;
-            stamina.OnPowerup += UpdateView;
+            stamina.OnStaminaChange += UpdateView;
 
             points = new Stamina[12];
             for (int i=0; i<12; i++) {

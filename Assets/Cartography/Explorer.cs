@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 namespace Cartography {
     public class Explorer : MonoBehaviour {
+        public delegate void PlaceVisitedDelegate ();
+
+        public event PlaceVisitedDelegate OnVillageVisit;
+
         public List<Discoverable> discovered;
         public GameObject foodPlace;
 
@@ -25,6 +29,9 @@ namespace Cartography {
                     n.saved = true;
                 }
                 discovered = new List<Discoverable>();
+                if (OnVillageVisit != null) {
+                    OnVillageVisit();
+                }
             } else if (c.gameObject.CompareTag("Danger")) {
                 foreach (Node n in discovered) {
                     n.Unexplore();
