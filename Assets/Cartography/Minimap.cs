@@ -7,40 +7,28 @@ namespace Cartography {
         public BoundingBox real;
         public BoundingBox mini;
 
-        public GameObject miniNodePrototype;
-        public GameObject miniExplorer;
-        public GameObject miniNodesParent;
         public GameObject explorer;
+        public GameObject miniExplorer;
 
-        public Dictionary<Node, MiniNode> nodes =
-            new Dictionary<Node, MiniNode>();
+        public Transform miniParent;
+
+        public Dictionary<Discoverable, MiniDiscoverable> discoverables =
+            new Dictionary<Discoverable, MiniDiscoverable>();
 
         void Update () {
             Vector3 relPos =
                 real.RelativeFromAbsolute(explorer.transform.position);
             miniExplorer.transform.position =
                 mini.AbsoluteFromRelative(relPos);
+            miniExplorer.transform.localPosition =
+                Vector3.Scale(miniExplorer.transform.localPosition, new Vector3(1, 0, 1)) +
+                new Vector3(0, -0.6f, 0);
         }
 
-        public void Register (Node node) {
-            MiniNode miniNode = Instantiate(miniNodePrototype).
-                GetComponent<MiniNode>();
-            nodes[node] = miniNode;
-            miniNode.transform.parent = miniNodesParent.transform;
-
-            Vector3 relativePosition =
-                real.RelativeFromAbsolute(node.transform.position);
-            miniNode.transform.position =
-                mini.AbsoluteFromRelative(relativePosition);
-
-            if (node.discovered) {
-                miniNode.Explore();
-            } else {
-                miniNode.Unexplore();
-            }
-
-            node.OnNodeExplored += miniNode.Explore;
-            node.OnNodeUnexplored += miniNode.Unexplore;
+        public void Register (Discoverable d) {
+            discoverables[d] = Instantiate(d.miniPrototype.gameObject)
+                .GetComponent<MiniDiscoverable>();
+            discoverables[d].Initialize(d, this);
         }
     }
 }

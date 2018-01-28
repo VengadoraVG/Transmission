@@ -7,6 +7,5 @@ public class Test : MonoBehaviour {
         for (int i=0; i<transform.childCount; i++) {
             transform.GetChild(i).transform.position = transform.position + transform.forward * i;
         }
-        // alsdkfjleifjslidi
     }
 }

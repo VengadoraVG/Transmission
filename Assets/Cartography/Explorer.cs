@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Cartography {
     public class Explorer : MonoBehaviour {
-        public List<Node> discovered;
+        public List<Discoverable> discovered;
 
         private Minimap _minimap;
 
@@ -14,8 +14,8 @@ namespace Cartography {
         }
 
         void OnTriggerEnter (Collider c) {
-            if (c.gameObject.CompareTag("Node")) {
-                Node n = c.gameObject.GetComponent<Node>();
+            if (c.gameObject.CompareTag("Discoverable")) {
+                Discoverable n = c.gameObject.GetComponent<Discoverable>();
                 if (!n.saved) {
                     discovered.Add(n);
                 }
@@ -23,12 +23,12 @@ namespace Cartography {
                 foreach (Node n in discovered) {
                     n.saved = true;
                 }
-                discovered = new List<Node>();
-            } else {
+                discovered = new List<Discoverable>();
+            } else if (c.gameObject.CompareTag("Danger")) {
                 foreach (Node n in discovered) {
                     n.Unexplore();
                 }
-                discovered = new List<Node>();
+                discovered = new List<Discoverable>();
             }
         }
     }
