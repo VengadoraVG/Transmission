@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: 7bdb688d907d6634489ce1fa0bda8114
-timeCreated: 1517129438
+timeCreated: 1517130424
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: martillo_0
+    21300000: martillo
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -81,7 +81,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: martillo_0
+      name: martillo
       rect:
         serializedVersion: 2
         x: 25
@@ -89,7 +89,7 @@ TextureImporter:
         width: 295
         height: 651
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

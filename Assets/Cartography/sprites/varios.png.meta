@@ -1,15 +1,15 @@
 fileFormatVersion: 2
 guid: fe12f98d58319374eaef43becca3e740
-timeCreated: 1517129809
+timeCreated: 1517130321
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: varios_0
-    21300002: varios_1
-    21300004: varios_2
-    21300006: varios_3
-    21300008: varios_4
-    21300010: varios_5
+    21300002: node
+    21300004: danger
+    21300006: wood
+    21300008: food
+    21300010: water
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -86,21 +86,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: varios_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 861
-        width: 562
-        height: 258
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: varios_1
+      name: node
       rect:
         serializedVersion: 2
         x: 607
@@ -108,13 +94,13 @@ TextureImporter:
         width: 235
         height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: varios_2
+      name: danger
       rect:
         serializedVersion: 2
         x: 762
@@ -122,13 +108,13 @@ TextureImporter:
         width: 323
         height: 484
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: varios_3
+      name: wood
       rect:
         serializedVersion: 2
         x: 455
@@ -136,27 +122,27 @@ TextureImporter:
         width: 256
         height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: varios_4
+      name: food
       rect:
         serializedVersion: 2
-        x: 206
+        x: 210
         y: 218
         width: 190
         height: 376
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: varios_5
+      name: water
       rect:
         serializedVersion: 2
         x: 54
@@ -164,7 +150,7 @@ TextureImporter:
         width: 342
         height: 232
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

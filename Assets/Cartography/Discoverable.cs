@@ -11,6 +11,7 @@ namespace Cartography {
         public GameObject miniPrototype;
         public bool saved = false;
         public bool discovered = false;
+        public bool isStatic = true;
 
         public event DiscoveredDelegate OnDiscover;
         public event UndiscoveredDelegate OnUndiscover;
@@ -26,7 +27,7 @@ namespace Cartography {
 
         void OnTriggerEnter (Collider c) {
             if (c.gameObject.CompareTag("Explorer")) {
-                bool discovered = true;
+                discovered = true;
                 if (OnDiscover != null) OnDiscover();
             }
         }

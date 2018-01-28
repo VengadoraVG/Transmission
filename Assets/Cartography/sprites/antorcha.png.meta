@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 3ab6c57a3c6a82e4086b82c268a53d62
-timeCreated: 1517129353
+timeCreated: 1517130836
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: antorcha
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -78,7 +79,21 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: antorcha
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 296
+        width: 319
+        height: 873
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

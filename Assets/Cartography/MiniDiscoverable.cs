@@ -8,6 +8,22 @@ namespace Cartography {
         public Discoverable _original;
         protected Minimap _minimap;
 
+        void Update () {
+            if (_original.discovered && !_original.isStatic) {
+                visual.SetActive(_original.gameObject.activeSelf);
+                UpdatePosition();
+            }
+        }
+
+        public void UpdatePosition () {
+            Vector3 relPos =
+                _minimap.real.RelativeFromAbsolute(_original.transform.position);
+            transform.position = _minimap.mini.AbsoluteFromRelative(relPos);
+
+            transform.localPosition =
+                Vector3.Scale(new Vector3(1,0,1), transform.localPosition);
+        }
+
         public void Initialize (Discoverable original, Minimap theMinimap) {
             _original = original;
             _minimap = theMinimap;
@@ -15,12 +31,7 @@ namespace Cartography {
             transform.parent = theMinimap.miniParent;
             transform.localRotation = Quaternion.Euler(0,0,0);
 
-            Vector3 relPos =
-                theMinimap.real.RelativeFromAbsolute(original.transform.position);
-            transform.position = theMinimap.mini.AbsoluteFromRelative(relPos);
-
-            transform.localPosition =
-                Vector3.Scale(new Vector3(1,0,1), transform.localPosition);
+            UpdatePosition();
 
             if (original.discovered) {
                 Discover();

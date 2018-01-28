@@ -8,6 +8,9 @@ TagManager:
   - Danger
   - Discoverable
   - Explorer
+  - Node
+  - Floor
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -23,8 +26,8 @@ TagManager:
   - danger
   - road
   - nodeDetector
-  - 
-  - 
+  - item
+  - forcedTransition
   - 
   - 
   - 

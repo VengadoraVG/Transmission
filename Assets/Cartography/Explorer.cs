@@ -5,6 +5,7 @@ using System.Collections.Generic;
 namespace Cartography {
     public class Explorer : MonoBehaviour {
         public List<Discoverable> discovered;
+        public GameObject foodPlace;
 
         private Minimap _minimap;
 
@@ -20,7 +21,7 @@ namespace Cartography {
                     discovered.Add(n);
                 }
             } else if (c.gameObject.CompareTag("Village")) {
-                foreach (Node n in discovered) {
+                foreach (Discoverable n in discovered) {
                     n.saved = true;
                 }
                 discovered = new List<Discoverable>();
