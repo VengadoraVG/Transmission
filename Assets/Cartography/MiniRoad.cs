@@ -4,7 +4,7 @@ using System.Collections;
 namespace Cartography {
     public class MiniRoad : MiniDiscoverable {
         public override void Initialize () {
-            transform.localPosition = new Vector3(0,0,0);
+            transform.localPosition = new Vector3(0,0.1f,0);
             Road r = _original.GetComponent<Road>();
             if (!r.IsRotationReady()) {
                 r.OnRotationReady += SetRotation;
@@ -12,7 +12,7 @@ namespace Cartography {
                 SetRotation();
             }
             transform.localScale = new Vector3(1, 1, 1);
-            transform.Translate(0, 0.1f, 0);
+            // transform.Translate(0, 0.1f, 0);
         }
 
         public void SetRotation () {

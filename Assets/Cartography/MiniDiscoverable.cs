@@ -5,7 +5,7 @@ namespace Cartography {
     public abstract class MiniDiscoverable : MonoBehaviour {
         public GameObject visual;
 
-        protected Discoverable _original;
+        public Discoverable _original;
         protected Minimap _minimap;
 
         public void Initialize (Discoverable original, Minimap theMinimap) {
@@ -25,7 +25,7 @@ namespace Cartography {
             if (original.discovered) {
                 Discover();
             } else {
-                // Undiscover();
+                Undiscover();
             }
 
             original.OnDiscover += Discover;
