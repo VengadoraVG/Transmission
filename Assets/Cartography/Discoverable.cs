@@ -33,6 +33,8 @@ namespace Cartography {
         }
 
         public void Unexplore () {
+            discovered = false;
+            saved = false;
             if (OnUndiscover != null) OnUndiscover();
         }
     }

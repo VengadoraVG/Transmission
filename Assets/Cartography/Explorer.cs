@@ -5,7 +5,9 @@ using System.Collections.Generic;
 namespace Cartography {
     public class Explorer : MonoBehaviour {
         public delegate void PlaceVisitedDelegate ();
+        public delegate void DieDelegate ();
 
+        public event DieDelegate OnDie;
         public event PlaceVisitedDelegate OnVillageVisit;
 
         public bool hasHammer = false;
@@ -22,7 +24,8 @@ namespace Cartography {
         }
 
         void OnTriggerEnter (Collider c) {
-            if (c.gameObject.CompareTag("Discoverable")) {
+            if (c.gameObject.CompareTag("Discoverable") ||
+                c.gameObject.CompareTag("Node")) {
                 Discoverable n = c.gameObject.GetComponent<Discoverable>();
                 if (!n.saved) {
                     discovered.Add(n);
@@ -36,11 +39,17 @@ namespace Cartography {
                     OnVillageVisit();
                 }
             } else if (c.gameObject.CompareTag("Danger")) {
-                foreach (Node n in discovered) {
-                    n.Unexplore();
-                }
-                discovered = new List<Discoverable>();
+                Die();
             }
+        }
+
+        public void Die () {
+            foreach (Discoverable n in discovered) {
+                n.Unexplore();
+            }
+            discovered = new List<Discoverable>();
+
+            if (OnDie != null) OnDie();
         }
     }
 }

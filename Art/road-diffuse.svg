@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="361.24442mm"
+   height="361.24442mm"
+   viewBox="0 0 361.24442 361.24442"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="road-diffuse.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4519"
+       inkscape:collect="always">
+      <stop
+         id="stop4515"
+         offset="0"
+         style="stop-color:#23a91a;stop-opacity:1;" />
+      <stop
+         id="stop4517"
+         offset="1"
+         style="stop-color:#23a91a;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4509"
+       inkscape:collect="always">
+      <stop
+         id="stop4505"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1" />
+      <stop
+         id="stop4507"
+         offset="1"
+         style="stop-color:#0f0a02;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="309.4617"
+       x2="185.96428"
+       y1="292.0748"
+       x1="185.96428"
+       id="linearGradient4511"
+       xlink:href="#linearGradient4509"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(1.0868176,0,0,1,-15.940947,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="289.76291"
+       x2="160.29338"
+       y1="280.6915"
+       x1="160.29338"
+       id="linearGradient4521"
+       xlink:href="#linearGradient4519"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="329.77873"
+     inkscape:cy="615.73317"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-global="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(129.9734,70.342445)"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="C:\Users\VG\Transmission\Art\road-uv.png"
+       xlink:href="road-uv.png"
+       width="361.24442"
+       height="361.24442"
+       preserveAspectRatio="none"
+       id="image4493"
+       x="-129.9734"
+       y="-70.342445" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="opacity:1">
+    <rect
+       style="opacity:1;fill:#23a91a;fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect4572"
+       width="223.43733"
+       height="230.92087"
+       x="122.94398"
+       y="132.4617" />
+    <g
+       id="g4564"
+       style="">
+      <g
+         id="g4584">
+        <rect
+           style="opacity:1;fill:#56390d;fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+           id="rect4497"
+           width="161.01784"
+           height="318.25595"
+           x="-7.5595236"
+           y="70.202759" />
+      </g>
+    </g>
+    <g
+       id="g4535"
+       transform="translate(-478.91224,-48.160512)"
+       style="">
+      <g
+         style="display:inline"
+         transform="translate(107.29483,0.79482669)"
+         id="layer1-6"
+         inkscape:label="Layer 1">
+        <image
+           sodipodi:absref="C:\Users\VG\Transmission\Art\nodo-uv.png"
+           xlink:href="nodo-uv.png"
+           style=""
+           width="361.24442"
+           height="361.24442"
+           preserveAspectRatio="none"
+           id="image4493-1"
+           x="-107.29483"
+           y="-0.79482669" />
+      </g>
+      <g
+         style="opacity:1"
+         inkscape:label="Layer 2"
+         id="layer2-8">
+        <rect
+           style="opacity:1;fill:#56390d;fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+           id="rect4501"
+           width="336.3988"
+           height="55.184525"
+           x="17.386906"
+           y="276.57776" />
+        <rect
+           y="290.94086"
+           x="17.386906"
+           height="40.821415"
+           width="336.3988"
+           id="rect4503"
+           style="opacity:1;fill:url(#linearGradient4511);fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+        <rect
+           y="260.70276"
+           x="17.386906"
+           height="35.529762"
+           width="336.3988"
+           id="rect4497-1"
+           style="opacity:1;fill:#176e11;fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+        <rect
+           y="8.9706135"
+           x="61.232143"
+           height="235.10118"
+           width="255.5119"
+           id="rect4499"
+           style="opacity:1;fill:#23a91a;fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+        <rect
+           y="280.39539"
+           x="3.8112323"
+           height="8.151722"
+           width="359.60583"
+           id="rect4513"
+           style="opacity:1;fill:url(#linearGradient4521);fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+      </g>
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4564"
+       id="use4566"
+       transform="matrix(-1,0,0,1,453.57141,0)"
+       width="100%"
+       height="100%"
+       style="" />
+    <use
+       height="100%"
+       width="100%"
+       transform="matrix(0.07739241,0.99700071,0.99700071,-0.07739241,-41.142812,18.62241)"
+       id="use4568"
+       xlink:href="#g4564"
+       y="0"
+       x="0"
+       style="" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4564"
+       id="use4570"
+       transform="rotate(-85.561303,214.73837,239.98184)"
+       width="100%"
+       height="100%"
+       style="" />
+  </g>
+</svg>

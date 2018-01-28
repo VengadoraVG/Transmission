@@ -29,6 +29,7 @@ namespace Control {
                     transform.parent = carryPlace.transform;
                     transform.localScale = carryingScale;
                     transform.localPosition = new Vector3(0,0,0);
+                    c.GetComponent<Cartography.Explorer>().OnDie += Drop;
                 } else if (c.CompareTag("Village") && isDroppedAtVillage) {
                     Drop();
                     transform.position = dropPlace.transform.position;
