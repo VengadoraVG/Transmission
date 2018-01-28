@@ -11,6 +11,7 @@ namespace Control {
 
             if (control.controledByPlayer) {
                 control.ForceMovement(target.transform.position);
+                control.GetComponent<PlayerStamina>().Consume();
             }
         }
     }
