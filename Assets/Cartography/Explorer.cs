@@ -8,6 +8,9 @@ namespace Cartography {
 
         public event PlaceVisitedDelegate OnVillageVisit;
 
+        public bool hasHammer = false;
+        public bool hasFire = false;
+
         public List<Discoverable> discovered;
         public GameObject foodPlace;
 

@@ -5,8 +5,12 @@ namespace Control {
     public class Carry : MonoBehaviour {
         public Vector3 carryingScale = new Vector3(0.3f, 0.3f, 0.3f);
         public bool isDroppedAtVillage = true;
-        public GameObject place;
+        public GameObject carryPlace;
+        public GameObject dropPlace;
         public bool alreadyDropped = false;
+
+        public bool isTorch;
+        public bool isHammer;
 
         private Vector3 _originalScale;
 
@@ -17,13 +21,17 @@ namespace Control {
         void OnTriggerEnter (Collider c) {
             if (!alreadyDropped) {
                 if (c.CompareTag("Explorer")) {
-                    transform.parent =
-                        c.GetComponent<Cartography.Explorer>().foodPlace.transform;
+                    if (isTorch)
+                        c.GetComponent<Cartography.Explorer>().hasFire = true;
+                    else if (isHammer)
+                        c.GetComponent<Cartography.Explorer>().hasHammer = true;
+
+                    transform.parent = carryPlace.transform;
                     transform.localScale = carryingScale;
                     transform.localPosition = new Vector3(0,0,0);
                 } else if (c.CompareTag("Village") && isDroppedAtVillage) {
                     Drop();
-                    transform.position = place.transform.position;
+                    transform.position = dropPlace.transform.position;
                     alreadyDropped = true;
                     GameObject.FindWithTag("Explorer").transform.parent.
                         GetComponent<PlayerStamina>().Powerup();
